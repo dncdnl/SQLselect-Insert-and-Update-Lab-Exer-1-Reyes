@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,7 +32,8 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         //Constructor class
         ClubRegistrationQuery()
         {
-
+            // Initialize the connection string
+            new SqlConnection("Data Source=LAB-A-PC00;Initial Catalog=ClubDB_danica;User ID=reyes.d;Password=12345;Trust Server Certificate=True");
         }
 
     }
