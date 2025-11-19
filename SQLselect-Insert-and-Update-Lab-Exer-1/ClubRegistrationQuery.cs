@@ -24,5 +24,8 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         // Connection string to connect to the SQL Server database
         private string connectionString;
 
+        // Constructor to initialize the connection string and other objects
+        public string _FirstName, _MiddleName, _LastName, _Gender, _Program;
+        public int _Age;
     }
 }
