@@ -27,5 +27,12 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         // Constructor to initialize the connection string and other objects
         public string _FirstName, _MiddleName, _LastName, _Gender, _Program;
         public int _Age;
+
+        //Constructor class
+        ClubRegistrationQuery()
+        {
+
+        }
+
     }
 }
