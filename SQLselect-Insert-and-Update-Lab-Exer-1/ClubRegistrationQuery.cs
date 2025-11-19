@@ -34,6 +34,9 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         {
             // Initialize the connection string
             new SqlConnection("Data Source=LAB-A-PC00;Initial Catalog=ClubDB_danica;User ID=reyes.d;Password=12345;Trust Server Certificate=True");
+
+            // Initialize data handling objects
+            new DataTable("ClubMembers");
         }
 
     }
