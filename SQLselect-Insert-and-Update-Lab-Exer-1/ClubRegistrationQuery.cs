@@ -20,5 +20,9 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         // Data handling objects
         public DataTable dataTable;
         public BindingSource bindingSource;
+
+        // Connection string to connect to the SQL Server database
+        private string connectionString;
+
     }
 }
