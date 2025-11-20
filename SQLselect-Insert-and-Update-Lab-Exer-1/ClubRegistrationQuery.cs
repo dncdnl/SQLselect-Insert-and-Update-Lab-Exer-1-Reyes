@@ -47,6 +47,9 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         {
             //Declaring a string variable to hold the SQL query
             string ViewClubMembers = "SELECT @StudentID, @FirstName, @MiddleName, @LastName, @Age, @Gender, @Program FROM ClubMembers";
+
+            //Initializing previusly created SqlAdapter
+            SqlDataAdapter sqlAdapter = new SqlDataAdapter(ViewClubMembers, sqlConnect);
         }
     }
 }
