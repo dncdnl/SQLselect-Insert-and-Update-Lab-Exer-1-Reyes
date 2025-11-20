@@ -16,10 +16,15 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         // SQL Server connection objects
         private SqlCommand sqlCommand;
         private SqlConnection sqlConnection;
+        
+
 
         public FrmUpdateMember()
         {
             InitializeComponent();
+            //Initializing the SQL Server connection object with the connection string
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ClubDB.mdf;Integrated Security=True;";
+            sqlConnection = new SqlConnection(connectionString);
         }
 
         private void butConfirm_Click(object sender, EventArgs e)
