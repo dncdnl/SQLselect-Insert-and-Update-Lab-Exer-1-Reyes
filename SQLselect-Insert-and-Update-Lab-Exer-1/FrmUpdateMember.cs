@@ -13,6 +13,7 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
 {
     public partial class FrmUpdateMember : Form
     {
+        // SQL Server connection objects
         private SqlCommand sqlCommand;
         private SqlConnection sqlConnection;
 
@@ -35,6 +36,7 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             //Instantiating the ClubRegistrationQuery class
             ClubRegistrationQuery clubRegistrationQuery = new ClubRegistrationQuery();
         }
+        //Creating the UpdateStudent method that returns a boolean value true
         public bool UpdateStudent(long StudentID, string FirstName, string MiddleName, string LastName, int Age, string Gender, string Program)
         {
             
@@ -55,6 +57,24 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
 
                 return true;
             
+        }
+
+        private void FrmUpdateMember_Load(object sender, EventArgs e)
+        {
+            //Initializing the SQL Server connection object
+            string query = "SELECT StudentID FROM ClubMembers";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+
+            sqlConnection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                cbStuNO.Items.Add(reader["StudentID"].ToString());
+            }
+
+            reader.Close();
+            sqlConnection.Close();
         }
     }
 }
