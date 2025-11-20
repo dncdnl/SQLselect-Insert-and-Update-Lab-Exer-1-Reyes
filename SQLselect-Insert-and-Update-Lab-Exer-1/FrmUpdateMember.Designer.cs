@@ -169,8 +169,43 @@
             // 
             this.cbProgram2.FormattingEnabled = true;
             this.cbProgram2.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
+            "Information & Communications Technology",
+            "BS in Information Technology (BSIT)",
+            "BS in Computer Science (BSCS)",
+            "BS in Information Systems (BSIS)",
+            "",
+            "Business & Management",
+            "BS in Business Administration (BSBA)",
+            "BS in Accountancy (BSA)",
+            "BS in Accounting Information System (BSAIS)",
+            "BS in Management Accounting (BSMA)",
+            "BS in Retail Technology and Consumer Science (BSRTCS)",
+            "2-yr. Associate in Retail Technology (ART)",
+            "",
+            "Hospitality Management",
+            "BS in Hospitality Management (BSHM)",
+            "BS in Culinary Management (BSCM)",
+            "3-yr. Hotel and Restaurant Administration (HRA)",
+            "2-yr. Hospitality and Restaurant Services (HRS)",
+            "",
+            "Tourism Management",
+            "BS in Tourism Management (BSTM)",
+            "",
+            "Engineering",
+            "BS in Computer Engineering (BSCpE)",
+            "",
+            "Arts & Sciences",
+            "Bachelor of Arts in Psychology",
+            "Bachelor of Multimedia Arts (BMMA)",
+            "BA in Communication (BACOMM)",
+            "",
+            "Maritime",
+            "Bachelor of Science in Marine Transportation (BSMT)",
+            "Bachelor of Science in Marine Engineering (BSMarE)",
+            "Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)",
+            "",
+            "Criminal Justice Education",
+            "Bachelor of Science in Criminology"});
             this.cbProgram2.Location = new System.Drawing.Point(15, 336);
             this.cbProgram2.Name = "cbProgram2";
             this.cbProgram2.Size = new System.Drawing.Size(185, 21);
