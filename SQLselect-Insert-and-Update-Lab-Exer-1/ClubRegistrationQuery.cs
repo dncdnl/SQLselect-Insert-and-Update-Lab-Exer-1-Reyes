@@ -42,6 +42,10 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             dataTable = new DataTable();
             bindingSource = new BindingSource();
         }
+        //Creating a Display list method that returns a boolean value true
+        public bool DisplayList()
+        {
 
+        }
     }
 }
