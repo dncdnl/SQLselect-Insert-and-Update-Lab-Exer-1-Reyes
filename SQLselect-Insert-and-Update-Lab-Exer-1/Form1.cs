@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,6 +29,9 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
 
             //Calling the RefreshListOfClubMembers method
             RefreshListOfClubMembers();
+
+            //Setting the count variable to the bindingSource Count property
+            count = clubRegistrationQuery.bindingSource.Count;
         }
 
         private long StudentID;
@@ -41,6 +45,13 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             //Binding the dataGridView DataSource to the bindingSource
             dataGridView.DataSource = clubRegistrationQuery.bindingSource;
 
+        }
+
+        //Creating a method to generate RegistrationID
+        public int RegistrationID()
+        {
+            count++;
+            return count;
         }
     }
 }
