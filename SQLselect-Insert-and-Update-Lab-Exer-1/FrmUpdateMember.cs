@@ -19,7 +19,8 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         public FrmUpdateMember()
         {
             InitializeComponent();
-            clubRegistrationQuery.RegisterStudent(cbStuNO);
+            //Calling the IdSelect method to populate the cbStuNO ComboBox
+            clubRegistrationQuery.IdSelect(cbStuNO);
         }
 
     }
