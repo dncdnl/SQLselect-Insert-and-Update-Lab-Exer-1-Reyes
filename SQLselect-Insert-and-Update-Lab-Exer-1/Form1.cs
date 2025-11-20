@@ -21,5 +21,11 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         private int ID, Age, count;
         private string FirstName, MiddleName, LastName, Gender, Program;
         private long StudentID;
+
+        //creating a method 
+        public void RefreshListOfClubMembers()
+        {
+
+        }
     }
 }
