@@ -185,6 +185,7 @@
             this.butConfirm.TabIndex = 23;
             this.butConfirm.Text = "Confirm";
             this.butConfirm.UseVisualStyleBackColor = true;
+            this.butConfirm.Click += new System.EventHandler(this.butConfirm_Click);
             // 
             // FrmUpdateMember
             // 

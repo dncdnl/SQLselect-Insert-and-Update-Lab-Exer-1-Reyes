@@ -262,6 +262,7 @@
             this.butUpdate.TabIndex = 17;
             this.butUpdate.Text = "Update";
             this.butUpdate.UseVisualStyleBackColor = true;
+            this.butUpdate.Click += new System.EventHandler(this.butUpdate_Click);
             // 
             // butRefresh
             // 

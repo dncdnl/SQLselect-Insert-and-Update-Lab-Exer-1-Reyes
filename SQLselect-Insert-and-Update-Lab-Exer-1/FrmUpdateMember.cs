@@ -16,5 +16,20 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         {
             InitializeComponent();
         }
+
+        private void butConfirm_Click(object sender, EventArgs e)
+        {
+            //Declaring variables
+            long StudentID = long.Parse(cbStuNO.Text);
+            string FirstName = tbFN2.Text;
+            string MiddleName = tbMN2.Text;
+            string LastName = tbLN2.Text;
+            int Age = int.Parse(tbAge2.Text);
+            string Gender = cbGender2.Text;
+            string Program = cbProgram2.Text;
+
+            //Instantiating the ClubRegistrationQuery class
+            ClubRegistrationQuery clubRegistrationQuery = new ClubRegistrationQuery();
+        }
     }
 }

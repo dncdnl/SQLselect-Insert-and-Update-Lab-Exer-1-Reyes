@@ -22,6 +22,12 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         private int ID, Age, count;
         private string FirstName, MiddleName, LastName, Gender, Program;
 
+        private void butUpdate_Click(object sender, EventArgs e)
+        {
+            FrmUpdateMember frmUpdateMember = new FrmUpdateMember();
+            frmUpdateMember.ShowDialog();
+        }
+
         private void butRefresh_Click(object sender, EventArgs e)
         {
             //Calling the RefreshListOfClubMembers method
