@@ -32,14 +32,15 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         //Constructor class
         ClubRegistrationQuery()
         {
-            // Initialize the connection string
-            new SqlConnection("Data Source=LAB-A-PC00;Initial Catalog=ClubDB_danica;User ID=reyes.d;Password=12345;Trust Server Certificate=True");
+            // Initialize connection string
+            connectionString = "Data Source=Danica-Reyes\\SQLEXPRESS;Initial Catalog=ClubDB;Integrated Security=True;Trust Server Certificate=True";
 
-            // Initialize data handling objects
-            new DataTable("ClubMembers");
+            // Initialize SQL Server connection objects
+            new SqlConnection(connectionString);
 
-            // Initialize binding source
-            new BindingSource();
+            //Instantiating data handling objects
+            dataTable = new DataTable();
+            bindingSource = new BindingSource();
         }
 
     }
