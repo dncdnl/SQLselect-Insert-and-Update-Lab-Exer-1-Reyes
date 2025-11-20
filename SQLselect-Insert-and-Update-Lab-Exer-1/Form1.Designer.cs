@@ -43,13 +43,13 @@
             this.lblMN = new System.Windows.Forms.Label();
             this.tbMN = new System.Windows.Forms.TextBox();
             this.panelLOCM = new System.Windows.Forms.Panel();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.lblLOCM = new System.Windows.Forms.Label();
             this.butRegister = new System.Windows.Forms.Button();
             this.butUpdate = new System.Windows.Forms.Button();
-            this.dgvLOCM = new System.Windows.Forms.DataGridView();
             this.butRefresh = new System.Windows.Forms.Button();
             this.panelLOCM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLOCM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblStuID
@@ -178,11 +178,21 @@
             // 
             // panelLOCM
             // 
-            this.panelLOCM.Controls.Add(this.dgvLOCM);
+            this.panelLOCM.Controls.Add(this.dataGridView);
             this.panelLOCM.Location = new System.Drawing.Point(16, 211);
             this.panelLOCM.Name = "panelLOCM";
             this.panelLOCM.Size = new System.Drawing.Size(629, 227);
             this.panelLOCM.TabIndex = 14;
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(629, 227);
+            this.dataGridView.TabIndex = 0;
             // 
             // lblLOCM
             // 
@@ -213,16 +223,6 @@
             this.butUpdate.TabIndex = 17;
             this.butUpdate.Text = "Update";
             this.butUpdate.UseVisualStyleBackColor = true;
-            // 
-            // dgvLOCM
-            // 
-            this.dgvLOCM.BackgroundColor = System.Drawing.Color.PeachPuff;
-            this.dgvLOCM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLOCM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLOCM.Location = new System.Drawing.Point(0, 0);
-            this.dgvLOCM.Name = "dgvLOCM";
-            this.dgvLOCM.Size = new System.Drawing.Size(629, 227);
-            this.dgvLOCM.TabIndex = 0;
             // 
             // butRefresh
             // 
@@ -262,7 +262,7 @@
             this.Name = "FrmClubRegistration";
             this.Text = "frmClubRegistration";
             this.panelLOCM.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLOCM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +285,7 @@
         private System.Windows.Forms.Label lblMN;
         private System.Windows.Forms.TextBox tbMN;
         private System.Windows.Forms.Panel panelLOCM;
-        private System.Windows.Forms.DataGridView dgvLOCM;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label lblLOCM;
         private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.Button butUpdate;
