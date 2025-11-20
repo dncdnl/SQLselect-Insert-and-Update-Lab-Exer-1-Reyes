@@ -50,6 +50,13 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
 
             //Initializing previusly created SqlAdapter
             SqlDataAdapter sqlAdapter = new SqlDataAdapter(ViewClubMembers, sqlConnect);
+
+            //Using the given code on number 6 letter c
+            dataTable.Clear();
+            sqlAdapter.Fill(dataTable);
+            bindingSource.DataSource = dataTable;
+
+            return true;
         }
     }
 }
