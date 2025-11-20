@@ -111,5 +111,22 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             }
             sqlConnect.Close();
         }
+        //Creating a method to update the selected StudentId
+        public void UpdateStudent(long StudentID, string FirstName, string
+                                MiddleName, string LastName, int Age, string Gender, string Program)
+        {
+            sqlCommand = new SqlCommand("UPDATE ClubMembers SET FirstName = @FirstName,MiddleName = @MiddleName,LastName= @LastName,Age= @Age,Gender= @Gender,Program= @Program WHERE StudentId = @StudentID", sqlConnect);
+
+            sqlCommand.Parameters.Add("@StudentID", SqlDbType.VarChar).Value = StudentID;
+            sqlCommand.Parameters.Add("@FirstName", SqlDbType.VarChar).Value = FirstName;
+            sqlCommand.Parameters.Add("@MiddleName", SqlDbType.VarChar).Value = MiddleName;
+            sqlCommand.Parameters.Add("@LastName", SqlDbType.VarChar).Value = LastName;
+            sqlCommand.Parameters.Add("@Age", SqlDbType.Int).Value = Age;
+            sqlCommand.Parameters.Add("@Gender", SqlDbType.VarChar).Value = Gender;
+            sqlCommand.Parameters.Add("@Program", SqlDbType.VarChar).Value = Program;
+            sqlConnect.Open();
+            sqlCommand.ExecuteNonQuery();
+            sqlConnect.Close();
+        }
     }
 }
