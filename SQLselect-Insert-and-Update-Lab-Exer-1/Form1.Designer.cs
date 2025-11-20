@@ -213,6 +213,7 @@
             this.butRegister.TabIndex = 16;
             this.butRegister.Text = "Register";
             this.butRegister.UseVisualStyleBackColor = true;
+            this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
             // 
             // butUpdate
             // 

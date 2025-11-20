@@ -22,6 +22,22 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         private int ID, Age, count;
         private string FirstName, MiddleName, LastName, Gender, Program;
 
+        private void butRegister_Click(object sender, EventArgs e)
+        {
+            //Assigning values to the variables
+            ID = RegistrationID();
+            StudentID = long.Parse(tbStuNo.Text);
+            FirstName = tbFN.Text;
+            MiddleName = tbMN.Text;
+            LastName = tbLN.Text;
+            Age = int.Parse(tbAge.Text);
+            Gender = cbGender.Text;
+            Program = cbProgram.Text;
+            //Calling the RegisterStudent method from the ClubRegistrationQuery class
+            clubRegistrationQuery.RegisterStudent(ID, StudentID, FirstName, MiddleName, LastName, Age, Gender, Program);
+
+        }
+
         private void FrmClubRegistration_Load(object sender, EventArgs e)
         {
             //Initalizing the ClubRegistrationQuery class
