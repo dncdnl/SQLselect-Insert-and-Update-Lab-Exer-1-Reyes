@@ -72,9 +72,25 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             sqlCommand.Parameters.Add("@Gender", SqlDbType.VarChar).Value = Gender; 
             sqlCommand.Parameters.Add("@Program", SqlDbType.VarChar).Value = Program;
 
-            sqlConnect.Open(); sqlCommand.ExecuteNonQuery(); sqlConnect.Close();
+            sqlConnect.Open(); 
+            sqlCommand.ExecuteNonQuery(); 
+            sqlConnect.Close();
             return true;
         }
+        //Creating a method to select StudentId and display it in the ComboBox
+        public void IdSelect(ComboBox cb)
+        {
+            string selectId = "SELECT StudentId FROM ClubMembers ";
+            sqlCommand = new SqlCommand(selectId, sqlConnect);
+            sqlCommand.CommandText = selectId;
+            sqlConnect.Open();
+            sqlReader = sqlCommand.ExecuteReader();
+            while (sqlReader.Read())
+            {
+                cb.Items.Add(sqlReader["StudentId"].ToString());
+            }
+            sqlConnect.Close();
 
+        }
     }
 }
