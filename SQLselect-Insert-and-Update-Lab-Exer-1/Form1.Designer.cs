@@ -234,6 +234,7 @@
             this.butRefresh.TabIndex = 18;
             this.butRefresh.Text = "Refresh";
             this.butRefresh.UseVisualStyleBackColor = true;
+            this.butRefresh.Click += new System.EventHandler(this.butRefresh_Click);
             // 
             // FrmClubRegistration
             // 
