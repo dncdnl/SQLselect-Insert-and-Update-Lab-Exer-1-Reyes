@@ -33,10 +33,10 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         public ClubRegistrationQuery()
         {
             // Initialize connection string
-            connectionString = "Data Source=Danica-Reyes\\SQLEXPRESS;Initial Catalog=ClubDB;Integrated Security=True;Trust Server Certificate=True";
+            connectionString = "Data Source=Danica-Reyes\\SQLEXPRESS;Initial Catalog=ClubDB;Integrated Security=True";
 
             // Initialize SQL Server connection objects
-            new SqlConnection(connectionString);
+            sqlConnect = new SqlConnection(connectionString);
 
             //Instantiating data handling objects
             dataTable = new DataTable();
@@ -46,7 +46,7 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         public bool DisplayList()
         {
             //Declaring a string variable to hold the SQL query
-            string ViewClubMembers = "SELECT @StudentID, @FirstName, @MiddleName, @LastName, @Age, @Gender, @Program FROM ClubMembers";
+            string ViewClubMembers = "SELECT StudentID, FirstName, MiddleName, LastName, Age, Gender, Program FROM ClubMembers";
 
             //Initializing previusly created SqlAdapter
             SqlDataAdapter sqlAdapter = new SqlDataAdapter(ViewClubMembers, sqlConnect);

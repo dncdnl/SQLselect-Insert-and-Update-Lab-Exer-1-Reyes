@@ -50,9 +50,6 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
 
             //Calling the RefreshListOfClubMembers method
             RefreshListOfClubMembers();
-
-            //Setting the count variable to the bindingSource Count property
-            count = clubRegistrationQuery.bindingSource.Count;
         }
 
         private long StudentID;
