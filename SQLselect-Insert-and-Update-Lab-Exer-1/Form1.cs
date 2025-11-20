@@ -16,5 +16,10 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         {
             InitializeComponent();
         }
+        //Declaring variables
+        private ClubRegistrationQuery clubRegistrationQuery;
+        private int ID, Age, count;
+        private string FirstName, MiddleName, LastName, Gender, Program;
+        private long StudentID;
     }
 }
