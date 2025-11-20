@@ -58,9 +58,6 @@
             // cbStuNO
             // 
             this.cbStuNO.FormattingEnabled = true;
-            this.cbStuNO.Items.AddRange(new object[] {
-            "Female",
-            "Male"});
             this.cbStuNO.Location = new System.Drawing.Point(15, 27);
             this.cbStuNO.Name = "cbStuNO";
             this.cbStuNO.Size = new System.Drawing.Size(185, 21);
@@ -220,6 +217,7 @@
             this.butConfirm.TabIndex = 23;
             this.butConfirm.Text = "Confirm";
             this.butConfirm.UseVisualStyleBackColor = true;
+            this.butConfirm.Click += new System.EventHandler(this.butConfirm_Click);
             // 
             // FrmUpdateMember
             // 
@@ -244,6 +242,7 @@
             this.Controls.Add(this.lblStuID2);
             this.Name = "FrmUpdateMember";
             this.Text = "FrmUpdateMember";
+            this.Load += new System.EventHandler(this.FrmUpdateMember_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
