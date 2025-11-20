@@ -90,7 +90,26 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
                 cb.Items.Add(sqlReader["StudentId"].ToString());
             }
             sqlConnect.Close();
-
+        }
+        //Creating a method to auto search the selected StudentId from the ComboBox
+        public void AutoSearch(TextBox tbFirstName, TextBox tbMiddleName, TextBox tbLastName, TextBox tbAge, ComboBox cbGender, ComboBox cbProgram, int ID)
+        {
+            string selectId = "SELECT FirstName,MiddleName,LastName,Age,Gender,Program FROM ClubMembers WHERE StudentId = @ID ";
+            sqlCommand = new SqlCommand(selectId, sqlConnect);
+            sqlCommand.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
+            sqlCommand.CommandText = selectId;
+            sqlConnect.Open();
+            sqlReader = sqlCommand.ExecuteReader();
+            while (sqlReader.Read())
+            {
+                tbFirstName.Text = (sqlReader["FirstName"].ToString());
+                tbMiddleName.Text = (sqlReader["MiddleName"].ToString());
+                tbLastName.Text = (sqlReader["LastName"].ToString());
+                tbAge.Text = (sqlReader["Age"].ToString());
+                cbGender.Text = (sqlReader["Gender"].ToString());
+                cbProgram.Text = (sqlReader["Program"].ToString());
+            }
+            sqlConnect.Close();
         }
     }
 }
