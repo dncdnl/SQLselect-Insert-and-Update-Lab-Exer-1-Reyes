@@ -45,7 +45,8 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         //Creating a Display list method that returns a boolean value true
         public bool DisplayList()
         {
-
+            //Declaring a string variable to hold the SQL query
+            string ViewClubMembers = "SELECT @StudentID, @FirstName, @MiddleName, @LastName, @Age, @Gender, @Program FROM ClubMembers";
         }
     }
 }
