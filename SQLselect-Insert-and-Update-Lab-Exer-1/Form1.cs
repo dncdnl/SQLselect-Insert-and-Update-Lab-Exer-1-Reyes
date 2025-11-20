@@ -64,6 +64,7 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         public void RefreshListOfClubMembers()
         {
             //Instantiating the ClubRegistrationQuery class
+            clubRegistrationQuery = new ClubRegistrationQuery();
             clubRegistrationQuery.DisplayList();
 
             //Binding the dataGridView DataSource to the bindingSource

@@ -26,6 +26,11 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
             //Calling the IdSelect method to populate the cbStuNO ComboBox
             clubRegistrationQuery.IdSelect(cbStuNO);
         }
+        //Creating an event handler for the cbStuNO ComboBox SelectedIndexChanged event
+        private void cbStudentID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            clubRegistrationQuery.AutoSearch(tbFN2, tbMN2, tbLN2, tbAge2, cbGender2, cbProgram2, Convert.ToInt32(cbStuNO.Text));
+        }
 
         //Creating an event handler for the Confirm button
         private void butConfirm_Click(object sender, EventArgs e)
