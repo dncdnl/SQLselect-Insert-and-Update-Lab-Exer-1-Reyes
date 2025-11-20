@@ -261,6 +261,7 @@
             this.Controls.Add(this.lblStuID);
             this.Name = "FrmClubRegistration";
             this.Text = "frmClubRegistration";
+            this.Load += new System.EventHandler(this.FrmClubRegistration_Load);
             this.panelLOCM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

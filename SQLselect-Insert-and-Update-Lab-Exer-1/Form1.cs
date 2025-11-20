@@ -20,6 +20,16 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         private ClubRegistrationQuery clubRegistrationQuery;
         private int ID, Age, count;
         private string FirstName, MiddleName, LastName, Gender, Program;
+
+        private void FrmClubRegistration_Load(object sender, EventArgs e)
+        {
+            //Initalizing the ClubRegistrationQuery class
+            clubRegistrationQuery = new ClubRegistrationQuery();
+
+            //Calling the RefreshListOfClubMembers method
+            RefreshListOfClubMembers();
+        }
+
         private long StudentID;
 
         //creating a method 

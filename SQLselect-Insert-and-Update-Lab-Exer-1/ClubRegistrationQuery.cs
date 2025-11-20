@@ -30,7 +30,7 @@ namespace SQLselect_Insert_and_Update_Lab_Exer_1
         public int _Age;
 
         //Constructor class
-        ClubRegistrationQuery()
+        public ClubRegistrationQuery()
         {
             // Initialize connection string
             connectionString = "Data Source=Danica-Reyes\\SQLEXPRESS;Initial Catalog=ClubDB;Integrated Security=True;Trust Server Certificate=True";
