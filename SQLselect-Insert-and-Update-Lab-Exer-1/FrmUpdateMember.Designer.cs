@@ -220,7 +220,6 @@
             this.butConfirm.TabIndex = 23;
             this.butConfirm.Text = "Confirm";
             this.butConfirm.UseVisualStyleBackColor = true;
-            this.butConfirm.Click += new System.EventHandler(this.butConfirm_Click);
             // 
             // FrmUpdateMember
             // 
@@ -245,7 +244,6 @@
             this.Controls.Add(this.lblStuID2);
             this.Name = "FrmUpdateMember";
             this.Text = "FrmUpdateMember";
-            this.Load += new System.EventHandler(this.FrmUpdateMember_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
